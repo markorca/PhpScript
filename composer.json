@@ -1,0 +1,21 @@
+{
+    "require": {
+        "katzgrau/klogger": "dev-master",
+        "dragonmantank/cron-expression": "dev-master",
+        "symfony/console": "dev-master",
+        "symfony/debug": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "https://pear.php.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpScript\\App\\":"app/",
+            "PhpScript\\Lib\\":"lib/"
+        },
+        "files": ["init.php"]
+    }
+}

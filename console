@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use PhpScript\Lib\Console\RunCommand;
+use PhpScript\Lib\Console\StartCommand;
+use PhpScript\Lib\Console\StopCommand;
+use PhpScript\Lib\Console\ScheduleCommand;
+
+$application = new Application();
+$application->add(new RunCommand());
+$application->add(new StartCommand());
+$application->add(new StopCommand());
+$application->add(new ScheduleCommand());
+
+$application->run();
